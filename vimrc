@@ -7,6 +7,7 @@ colorscheme Tomorrow-Night
 set colorcolumn=90
 set updatetime=100
 
+set backspace=indent,eol,start
 let mapleader=" "
 
 map <leader>s :source ~/.vim/vimrc
