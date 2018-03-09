@@ -4,7 +4,7 @@ filetype on
 syntax on
 colorscheme Tomorrow-Night
 
-set colorcolumn=90
+set colorcolumn=81
 set updatetime=100
 
 set backspace=indent,eol,start
@@ -26,4 +26,9 @@ set autoindent
 set hlsearch
 
 set showmatch
+
+" In Git commit messages, make width 72 characters
+autocmd FileType gitcommit set textwidth=72
+" In Git commit messages, also colour the 51st column (for titles)
+autocmd FileType gitcommit set colorcolumn+=51
 
